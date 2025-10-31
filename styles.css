@@ -1,0 +1,119 @@
+body { 
+      font-family: Arial, sans-serif; 
+      text-align: center; 
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+ 
+   main {
+  flex: 1;
+  margin-left: 240px; /* keeps content from hiding under sidebar */
+  text-align: center;
+  padding: 40px;
+}
+ 
+       
+    
+ 
+    .nft { 
+      display: inline-block; 
+      margin: 20px; 
+      border: 1px solid #ccc; 
+      padding: 10px; 
+      border-radius: 10px; 
+    }
+ 
+    img { 
+      width: 200px; 
+      height: 300px; 
+      display: block; 
+      margin-bottom: 10px; 
+    }
+ 
+    button { 
+      padding: 10px 15px; 
+      font-size: 16px; 
+      cursor: pointer; 
+    }
+ 
+    #resetButton {
+      margin-top: 40px;
+      padding: 10px 25px;
+      background-color: orange;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+ 
+#talesInput {
+  margin-top: 15px;
+  padding: 8px;
+  width: 350px;
+  height: 150px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  resize: none; /* optional – disables dragging to resize */
+  font-family: inherit;
+  text-align: left;
+}
+ 
+footer {
+  background-color: #222;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+     margin-top: auto; /* pushes it to the bottom */
+}
+footer p {
+  color: #00bfff;
+   left: 50px;
+}
+ 
+footer a {
+  color: #00bfff;
+  text-decoration: none;
+}
+ 
+footer a:hover {
+  color:  orange;
+}
+ 
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+   max-hight: 100vh;
+}
+ 
+.sidebar h2 {
+  color: #00bfff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+ 
+.sidebar a {
+  color: #ddd;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+ 
+.sidebar a:hover {
+  background-color: #00bfff;
+  color: #fff;
+}
