@@ -1,0 +1,16 @@
+{
+  "short_name": "MyNFT Demo app",
+  "name": "NFT app (add to homescreen test page)",
+  "display": "standalone",
+  "start_url": "/Nft-Demo/?source=pwa",
+  "id": "/Nft-Demo/?source=pwa",
+  "icons": [
+    {
+      "src": "/Nft-Demo/apple-touch-icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
+ 
