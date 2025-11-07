@@ -11,7 +11,7 @@ document.cookie = name + '=' + value + '; expires=' + expires + '; path=/';
 }
 
 function acceptCookies(){
-setCookie('CookiesAccepted', 'true', 30);
+setCookie('cookiesAccepted', 'true', 30);
 document.getElementById('cookie-banner').style.display = 'none';
 }
 
