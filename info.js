@@ -12,7 +12,7 @@ function collectVisitorInfo(){
 
     const csv = Object.keys(data).join(",") + "\n" + Object.values(data).join(",") + "\n";
 
-    const blob = new Blob([csv], {type: "test/csv"})
+    const blob = new Blob([csv], {type: "test/csv"});
     const url = URL.createObjectUrl(blob);
     const a = document.createElement("a");
     a.href = url;
