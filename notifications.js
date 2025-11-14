@@ -6,12 +6,12 @@ document.addEventListener("DOMConetentLoaded", () => {
 
     function showModal(message){
         modalText.textContent = message;
-        overlay.classList.remove("show")
+        overlay.classList.remove("show");
 
     }
 
     closeBtn.addEventListener("click", () => {
-        overlay.classList.remove("show")
+        overlay.classList.remove("show");
     });
 
     window.buyNFT = function(id) {
