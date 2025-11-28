@@ -49,7 +49,7 @@ document.addEventListener("DOMConetentLoaded", () => {
                 btn.disabled = true
             }, 1000);
             }
-        })
+        });
     };
 
 });
