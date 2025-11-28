@@ -44,9 +44,9 @@ document.addEventListener("DOMConetentLoaded", () => {
                 setTimeout(() => {
                 btn.textContent = "owned";
                 btn.style.backgroundColor = "#222";
-                btn.style.color = "#00bfff"
+                btn.style.color = "#00bfff";
                 btn.style.cursor = "not-allowed";
-                btn.disabled = true
+                btn.disabled = true;
             }, 1000);
             }
         });
