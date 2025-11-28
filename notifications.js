@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
  
      // Map NFT IDs to Google Drive file IDs
   const nftFiles = {
-    1: "1qR5u2v9eML1Gc7B4Egk1htWjccsjayd6",
+    1: "1tzLZZnniuv4GN5oykH88pm3Qs8ArsAuD",
    // 2: "GOOGLE_DRIVE_FILE_ID_2",
    // 3: "GOOGLE_DRIVE_FILE_ID_3"
   };
