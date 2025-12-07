@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+ 	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Simple NFT Demo</title>
@@ -62,11 +63,17 @@
     <div id="talesInputContainer">
      <textarea id="talesInput" placeholder="Enter Taleslang input..."></textarea>
     </div>
- 
+	  
+ 	<p id="wallet"></p>
+<!--<p id="user-email"></p> -->
+<br>
+<script src="session.js"></script>
+	  
     <footer>
       <p>Author: Tales of Heilotia — 
         <a href="https://www.youtube.com/@TalesOfHeilotia" target="_blank" rel="noopener noreferrer">My YouTube</a>
       </p>
+		
     </footer>
   </main>
  
@@ -77,5 +84,6 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
 </body>
 </html>
