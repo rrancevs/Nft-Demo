@@ -6,15 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
  
     const email = document.getElementById("inputEmail").value.trim();
     const password = document.getElementById("inputPassword").value;
-
-
+ 
     if (!email || !password) {
-    alert("please fill in all fields!");
-    return;
-
-
+      alert("Please fill in all fields!");
+      return;
+    }
+ 
+    // Hash password with SHA-256 to match register.js
     const passwordHash = await sha256(password);
-
+ 
     // Query Supabase
     const { data, error } = await supabase
       .from("profiles")
@@ -27,17 +27,18 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Invalid email or password!");
       return;
     }
-
-    localStorage.setItem("supaBaseSession", JSON.stringify({
+ 
+    // Store session locally
+    localStorage.setItem("supabaseSession", JSON.stringify({
       user: { id: data.id, email: data.email },
       walletHash: data.wallet_hash
     }));
-
-
-      window.location.href = "index.html";
-    });
+ 
+    // Redirect to profile page
+    window.location.href = "index.html";
+  });
 });
-
+ 
 // SHA-256 hashing function
 async function sha256(message) {
   const msgBuffer = new TextEncoder().encode(message);
@@ -45,5 +46,3 @@ async function sha256(message) {
   const hashArray = Array.from(new Uint8Array(hashBuffer));
   return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
 }
-
-    
