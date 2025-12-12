@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const sessionData = JSON.parse(localStorage.getItem("supabaseSession"));
-  LocalStorage.reoveItem("supabaseSession");
+  localStorage.reoveItem("supabaseSession");
   
   if (!sessionData) {
     window.location.href = "login.html";
