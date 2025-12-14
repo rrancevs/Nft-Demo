@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
   
   // 1 hour session
-  const session = new Date(sessionData.createdAt).getTime();
+  const sessionStart = new Date(sessionData.createdAt).getTime();
   const now = Date.now();
   const oneHour = 60 * 60 * 1000
   if ( now - sessionStart > oneHour) {
